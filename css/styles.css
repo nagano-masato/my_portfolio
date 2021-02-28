@@ -116,7 +116,7 @@ section{
     border-radius: 4px;
     text-align: center;
     padding: 1rem 0;
-    margin:0 auto 1rem;
+    margin-bottom: 1rem;
 }
 
 .conentTitle{
@@ -339,6 +339,10 @@ section{
 
     .workSummary__txt, .illustSummary__txt, .other__txt{
         margin-bottom: 2rem;
+    }
+
+    .other__appListItem{
+        margin: 0 auto 1rem;
     }
 
     #modal{
