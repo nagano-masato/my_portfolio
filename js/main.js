@@ -33,6 +33,26 @@
         close.click();
     });
 
+
+    // グローバルナビの固定
+
+    function fixedMenu() {
+        const gnav = document.querySelector('.navWrap');
+        const gnavPosition = gnav.getBoundingClientRect().top;
+        const windowTop = window.pageYOffset -40;
+        if (gnavPosition < windowTop) {
+            gnav.classList.add('fixed');
+            
+        }else{
+            gnav.classList.remove('fixed');
+        }
+    }
+
+    window.addEventListener('scroll', fixedMenu);
+    
+
+    
+
     // ハンバーガーメニュー
 
     const navOpen = document.getElementById('navOpen');
@@ -67,7 +87,7 @@
             let targetElement = document.getElementById(href.replace('#', ''));
             const rect = targetElement.getBoundingClientRect().top;
             const offset = window.pageYOffset;
-            const target = rect + offset - 60;
+            const target = rect + offset - 80;
             window.scrollTo({
               top: target,
               behavior: 'smooth',

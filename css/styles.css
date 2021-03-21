@@ -7,12 +7,13 @@ body{
     margin: 0;
 }
 
-h1, h2, h3, p{
+h1, h2, h3, h4, ul, p{
     margin: 0%;
 }
 
 ul{
     padding: 0;
+    list-style: none;
 }
 
 img{
@@ -48,6 +49,7 @@ section{
 
 .message__txt{
     text-align: center;
+    margin-bottom: 30px;
 }
 
 /* メニュー */
@@ -65,7 +67,8 @@ section{
 .navMenu{
     background: #1D1D26;
     padding: 1em;
-    margin: 40px 0 120px;
+    margin: 0 0 120px;
+    z-index: 500;
 }
 
 .navMenu__list{
@@ -75,6 +78,14 @@ section{
 
 .navMenu__list a{
     color: #fff ;
+}
+
+/* 固定用スタイル */
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
 }
 
 
@@ -105,7 +116,15 @@ section{
     flex-basis: 45%;
 }
 
-.workSummary__txtBox, .illustSummary__txtBox{
+.workSummary__box{
+  flex-basis: 30%;  
+}
+
+.workSummary__box ul {
+    font-size: 0.85rem;
+}
+
+.illustSummary__txtBox{
     flex-basis: 50%;
 }
 
@@ -119,7 +138,7 @@ section{
     margin-bottom: 1rem;
 }
 
-.conentTitle{
+.contentTitle{
     margin-bottom: 1em;
 }
 
@@ -127,11 +146,15 @@ section{
     margin-bottom: 1rem;
 }
 
-.workSummary__txtBox img{
+.workSummary__Box img{
     margin-bottom: 1rem;
 }
 
-.conentTitle{
+.workSummary__box h4 {
+    margin: 1em 0 0.5em;
+}
+
+.contentTitle{
     text-align: center;
 }
 
@@ -145,8 +168,17 @@ section{
     margin: 20px auto 0;
 }
 
+.accessBtn {
+    text-align: right;
+}
 
+.modalBox {
+    margin-bottom: 2rem;
+}
 
+.modalBox > .contentTitle {
+    font-size: 1rem;
+}
 
 /* モーダル */
 
@@ -327,10 +359,14 @@ section{
 
     .workSummary a,
     .illustSummary a,
-    .workSummary__txtBox,
+    .workSummary__box,
     .illustSummary__txtBox,
     .other__appListItem{
         flex-basis: 100%;
+    }
+
+    .workSummary__box {
+        margin-bottom: 4rem;
     }
 
     .illustSummary__txtBox{
@@ -349,10 +385,16 @@ section{
         word-wrap: break-word;
     }
 
+    .modalBox .contentTitle {
+        text-align: center;
+    }
+
     .hambMenu {
         margin-left: auto;
         display: block;
         text-align: center;
         color: #fff;
       }
+
+    
 }

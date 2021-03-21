@@ -17,16 +17,18 @@
                 永野将人のポートフォリオです。<br>
                 開発言語については全て独学です。どうぞよろしくお願い致します。
             </p>
-            <nav class="navMenu">
-                <ul class="navMenu__list pc">
-                    <li class="navMenu__listItem"><a href="#work">サイト制作実績</a></li>
-                    <li class="navMenu__listItem"><a href="#illust">イラスト制作実績</a></li>
-                    <li class="navMenu__listItem"><a href="#other">JavaScriptについて</a></li>
-                </ul>          
-                <div class="hambMenu">
-                    <span class="material-icons" id="navOpen">menu</span>
-                </div>
-            </nav>
+            <div class="navWrap">
+                <nav class="navMenu">
+                    <ul class="navMenu__list pc">
+                        <li class="navMenu__listItem"><a href="#work">サイト制作実績</a></li>
+                        <li class="navMenu__listItem"><a href="#illust">イラスト制作実績</a></li>
+                        <li class="navMenu__listItem"><a href="#other">JavaScriptについて</a></li>
+                    </ul>          
+                    <div class="hambMenu">
+                        <span class="material-icons" id="navOpen">menu</span>
+                    </div>
+                </nav>
+            </div>
         </header>
         <div class="overlay">
             <span class="material-icons" id="navClose">close</span>
@@ -44,78 +46,112 @@
                     <h2 class="sectionTitle" id="work">サイト制作実績</h2>
                     <p>〜直近に制作したページのご紹介〜</p>
                 </div>
-                <h3 class="conentTitle sp">自社運用のECサイト制作</h3>
                 <div class="workSummary container">
-                    <a href="https://shizekura.net/" rel="noopener noreferrer" target="_blank">
-                        <img class="pc" src="img/work_summary.jpeg" alt="しぜんとくらそのサイトイメージ">
-                        <img class="sp" src="img/work_summary_sp.jpeg" alt="しぜんとくらそのサイトイメージ">
-                    </a>
-                    <div class="workSummary__txtBox">
-                        <h3 class="conentTitle pc">自社運用のECサイト制作</h3>
-                        <p class="workSummary__txt">
-                            ASPのショップサーブを利用しています。既製テーマの「Sホワイト」をカスタマイズを行いました。
+                    <div class="workSummary__box">
+                        <h3 class="contentTitle">老舗英会話教室Webサイト</h3>
+                        <a href="https://www.mls-etd.co.jp/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/work01.jpeg" alt="">
+                        </a>
+                        <p>
+                            全200ページ近いサービスサイトのリニューアル。
                         </p>
-                        <img src="img/work_themeList.jpeg" alt="ショップサーブのテーマ一覧">
-                        <p class="workSummary__txt">
-                            カスタマイズのプロジェクト自体は継続中で、現状のページもカスタマイズ途中のものです。<br>
-                            別プロジェクトの進行状況との兼ね合いで、保留になっています。
+                        <h4>プロジェクト規模７名</h4>
+                        <ul>
+                            <li>プロデューサー１名</li>
+                            <li>ディレクター１名</li>
+                            <li>コーダー２名</li>
+                            <li>外部パートナー企業3名（デザイナー、コーダー、内訳不明）</li>
+                        </ul>
+                    </div>
+                    <div class="workSummary__box">
+                        <h3 class="contentTitle">自社運営Webサイト</h3>
+                        <a href="https://syouei-farm.net/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/work02.jpeg" alt="">
+                        </a>
+                        <p>
+                            段階的なリニューアルプロジェクトのフェーズ１が終了。
                         </p>
-                        <p class="workSummary__txt">
-                            ちなみにコードを記述したのは
-                            HTMLの制作箇所はヘッダー部分からスライドショーまでで、その他のカスタマイズはCSSでテーマスタイルの上書きで対応しています。
-                            
+                        <h4>プロジェクト規模４名</h4>
+                        <ul>
+                            <li>プロデューサー１名</li>
+                            <li>ディレクター１名</li>
+                            <li>デザイナー１名</li>
+                            <li>コーダー１名</li>
+                        </ul>
+                    </div>
+                    <div class="workSummary__box">
+                        <h3 class="contentTitle">自社運営ECサイト</h3>
+                        <a href="https://shizekura.net/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/work03.jpeg" alt="">
+                        </a>
+                        <p>
+                            ASP「ショップサーブ」のシンプルな既製テーマをカスタマイズして制作。
                         </p>
-                        <div id="open" class="btn">
-                            HTMLのソースコードはこちら
-                        </div>
-                        <div class="btn">
-                            <a href="https://shizekura.net/header/custom.css" rel="noopener noreferrer" target="_blank">
-                                CSSのソースコードはこちら
-                            </a>
-                        </div>
+                        <h4>プロジェクト規模４名</h4>
+                        <ul>
+                            <li>プロデューサー１名</li>
+                            <li>ディレクター１名</li>
+                            <li>デザイナー１名</li>
+                            <li>コーダー１名</li>
+                        </ul>
                     </div>
                 </div>
+                <div id="open" class="btn">
+                    その他制作サイト一覧
+                </div>
                 <div id="modal" class="hidden">
-                    &lt;div class=&quot;headerTop&quot;&gt;<br>
-                    &lt;div class=&quot;headerTop__container&quot;&gt;<br>
-                      &lt;p class=&quot;headerTop__txt&quot;&gt;「安心・安全な食」を届ける通販サイト　しぜんとくらそ（通称：しぜくら）&lt;/p&gt;<br>
-                      &lt;nav class=&quot;headerTop__Nav&quot;&gt;<br>
-                        &lt;ul class=&quot;headerTop__NavList&quot;&gt;<br>
-                          &lt;li class=&quot;headerTop__NavListItem01&quot;&gt;&lt;a href=&quot;/hpgen/HPB/shop/shoppinguide.html&quot;&gt;ご利用ガイド&lt;/a&gt;&lt;/li&gt;<br>
-                          &lt;li class=&quot;headerTop__NavListItem02&quot;&gt;&lt;a onclick=&quot;javascript:openPage('https://shizekura.net/CART/newmem.php'); return false;&quot; href=&quot;/_ga/newmen.php&quot; title=&quot;新規会員登録&quot;&gt;新規会員登録&lt;/a&gt;&lt;/li&gt;<br>
-                          &lt;li class=&quot;headerTop__NavListItem03&quot;&gt;&lt;a onClick=&quot;javascript:openPage('https://shizekura.net/CART/login.cgi','mypage'); return false;&quot; href=&quot;/_ga/login.cgi&quot; title=&quot;マイページログイン&quot;&gt;マイページログイン&lt;/a&gt;&lt;/li&gt;<br>
-                        &lt;/ul&gt;<br>
-                      &lt;/nav&gt;<br>
-                    &lt;/div&gt;<br>
-                  &lt;/div&gt;<br>
-                  &lt;div class=&quot;headerInfo&quot;&gt;<br>
-                    &lt;a class=&quot;headerInfo__logo&quot; href=&quot;/&quot;&gt;&lt;img class=&quot;headerInfo__cardInfo&quot; src=&quot;https://shizekura.net/header/img/headerInfo_logo.jpg&quot; alt=&quot;安心・安全の食をお届けします。しぜんとくらそ&quot;&gt;&lt;/a&gt;<br>
-                    &lt;div class=&quot;headerInfo__container&quot;&gt;<br>
-                      &lt;img src=&quot;https://shizekura.net/header/img/headerInfo_card.png&quot; alt=&quot;採れたて産直。毎週火・土にお届け&quot; &gt;<br>
-                      &lt;a class=&quot;headerInfo__checkCartBtn&quot; onClick=&quot;javascript:goCart();return false;&quot; href=&quot;/_ga/cart.php&quot; title=&quot;カートをみる&quot; &gt;カートを見る&lt;/a&gt;<br>
-                    &lt;/div&gt;<br>
-                  &lt;/div&gt;<br>
-                            &lt;div class=&quot;headerNav&quot;&gt;<br>
-                    &lt;nav class=&quot;gnav&quot;&gt;<br>
-                      &lt;ul class=&quot;gnav__list&quot;&gt;<br>
-                        &lt;li class=&quot;gnav__listItem01&quot;&gt;&lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;https://shizekura.net/header/img/gnav_homeIcon.png&quot; alt=&quot;ホーム&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
-                        &lt;li class=&quot;gnav__listItem02&quot;&gt;&lt;a href=&quot;/SHOP/314384/list.html&quot;&gt;商品一覧&lt;/a&gt;&lt;/li&gt;<br>
-                        &lt;li class=&quot;gnav__listItem03&quot;&gt;&lt;a href=&quot;/hpgen/HPB/categories/25575.html&quot;&gt;農場と店舗の紹介&lt;/a&gt;&lt;/li&gt;<br>
-                        &lt;li class=&quot;gnav__listItem04&quot;&gt;&lt;a href=&quot;/hpgen/HPB/shop/shoppinguide.html&quot;&gt;ご利用案内&lt;/a&gt;&lt;/li&gt;<br>
-                        &lt;li class=&quot;gnav__listItem05&quot;&gt;&lt;a href=&quot;/hpgen/HPB/entries/9.html&quot;&gt;よくある質問&lt;/a&gt;&lt;/li&gt;<br>
-                        &lt;li class=&quot;gnav__listItem06&quot;&gt;&lt;a href=&quot;/hpgen/HPB/entries/13.html&quot;&gt;しぜくらポイント&lt;/a&gt;&lt;/li&gt;<br>
-                        &lt;li class=&quot;gnav__listItem07&quot;&gt;&lt;a onClick=&quot;javascript:openPage('https://shizekura.net/FORM/contact.cgi','form'); return false;&quot; href=&quot;/_ga/FORM/contact.cgi&quot; title=&quot;お問い合せ&quot;&gt;お問い合せ&lt;/a&gt;&lt;/li&gt;<br>
-                      &lt;/ul&gt;<br>
-                    &lt;/nav&gt;<br>
-                  &lt;/div&gt;<br>
-                &lt;ul class=&quot;slider remove-slider&quot;&gt;<br>
-                  &lt;li&gt;&lt;a href=&quot;https://shizekura.net/SHOP/349737/list.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv07_pc.jpg&quot; alt=&quot;会えない今だからこそ、感謝を届けたい！しぜくらのバレンタイン2021&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
-                  &lt;li&gt;&lt;a href=&quot;/hpgen/HPB/entries/13.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv06_pc.jpg&quot; alt=&quot;しぜくらポイントはじめました&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
-                  &lt;li&gt;&lt;a href=&quot;https://shizekura.net/SHOP/346542/list.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv04_pc.jpg&quot; alt=&quot;しぜくら冬の贈り物2020ご用意しました！&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
-                  &lt;li&gt;&lt;a href=&quot;https://shizekura.net/SHOP/346702/list.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv05_pc.jpg&quot; alt=&quot;冬の野菜特集&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
-                  &lt;li&gt;&lt;a href=&quot;https://beset-plaza.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv01_pc.jpg&quot; alt=&quot;固定種・在来種・無農薬野菜と「安心・安全」を見定めた食品をまとめました&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
-                  &lt;li&gt;&lt;a href=&quot;https://shizekura.net/SHOP/yoyaku-ryu-sweetpotato2020.html&quot;&gt;&lt;img src=&quot;https://shizekura.net/slideshow/images/shizekura_fv02_pc.jpg&quot; alt=&quot;茨城県龍ケ崎市自社農園のさつまいも三姉妹4kg3,500円（税込み）&quot;&gt;&lt;/a&gt;&lt;/li&gt;<br>
-              　&lt;/ul&gt;<br>
+                    <div class="modalBox">
+                        <h3 class="contentTitle">
+                            <a href="https://www.saiga.jp/" target="_blank" rel="noopener noreferrer">
+                            鍼灸整骨院Webサイト
+                            </a>
+                        </h3>
+                        <p>
+                            プロジェクトの人数は3名（ディレクター兼コーダー１名、ライター１名、デザイナー１名）。
+                        </p>
+                        <a class="accessBtn" href="https://www.saiga.jp/" target="_blank" rel="noopener noreferrer">
+                            サイトを見る ＞
+                        </a>
+                    </div>
+                    <div class="modalBox">
+                        <h3 class="contentTitle">
+                            <a href="https://www.sanshinj.co.jp/" target="_blank" rel="noopener noreferrer">
+                            「プラント工事」と「製缶品製作」の老舗企業Webサイト
+                            </a>
+                        </h3>
+                        <p>
+                            プロジェクトの人数は５名（プロデューサー１名、ディレクター１名、デザイナー１名、コーダー２名）。
+                        </p>
+                        <a class="accessBtn" href="https://www.sanshinj.co.jp/" target="_blank" rel="noopener noreferrer">
+                            サイトを見る ＞
+                        </a>
+                    </div>
+                    <div class="modalBox">
+                        <h3 class="contentTitle">
+                            <a href="https://www.scivax.com/" target="_blank" rel="noopener noreferrer">
+                            微細加工サービス企業Webサイト
+                            </a>
+                        </h3>
+                        <p>
+                            プロジェクトの人数は５名（プロデューサー１名、ディレクター兼ライター１名、デザイナー１名、コーダー２名）。
+                        </p>
+                        <a class="accessBtn" href="https://www.scivax.com/" target="_blank" rel="noopener noreferrer">
+                            サイトを見る ＞
+                        </a>
+                    </div>
+                    <div class="modalBox">
+                        <h3 class="contentTitle">
+                            <a href="https://beset-plaza.net/" target="_blank" rel="noopener noreferrer">
+                            自社運営の自然食品販売店Webサイト
+                            </a>
+                        </h3>
+                        <p>
+                            プロジェクトの人数は４名（プロデューサー１名、ディレクター兼ライター１名、デザイナー１名、コーダー１名）。
+                        </p>
+                        <a class="accessBtn" href="https://beset-plaza.net/" target="_blank" rel="noopener noreferrer">
+                            サイトを見る ＞
+                        </a>
+                    </div>
                     <div class="btn" id="close">
                         閉じる
                     </div>
@@ -127,10 +163,10 @@
                     <h2 class="sectionTitle" id="illust">イラスト制作実績</h2>
                     <p>〜Webサイト用のイラスト〜</p>
                 </div>
-                <h3 class="conentTitle sp">LPのイラストを一部担当</h3>
+                <h3 class="contentTitle sp">LPのイラストを一部担当</h3>
                 <div class="illustSummary container">
                     <div class="illustSummary__txtBox">
-                        <h3 class="conentTitle pc">LPのイラストを一部担当</h3>
+                        <h3 class="contentTitle pc">LPのイラストを一部担当</h3>
                         <p class="illustSummary__txt">
                             応募した職種はエンジニアですが、AdobeのIllustratorやPhotoshopを使用してのイラスト制作も可能です。ランディングページのイラストの一部を制作しました。
                         </p>
