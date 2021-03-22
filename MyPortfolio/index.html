@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="永野将人のポートフォリオです。よろしくお願い致します。">
+        <meta name="keywords" content="永野, 将人, 転職, ポートフォリオ, 独学,">
+        <meta name=”robots” content=”noindex,nofollow”>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>MyPortfolio</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="messageTitle">My Portfolio</h1>
+            <p class="message__txt pc">
+                永野将人のポートフォリオです。<br>
+                開発言語については全て独学です。どうぞよろしくお願い致します。
+            </p>
+            <div class="navWrap">
+                <nav class="navMenu">
+                    <ul class="navMenu__list pc">
+                        <li class="navMenu__listItem"><a href="#work">サイト制作実績</a></li>
+                        <li class="navMenu__listItem"><a href="#illust">イラスト制作実績</a></li>
+                        <li class="navMenu__listItem"><a href="#other">JavaScriptについて</a></li>
+                    </ul>          
+                    <div class="hambMenu">
+                        <span class="material-icons" id="navOpen">menu</span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="overlay">
+            <span class="material-icons" id="navClose">close</span>
+            <nav>
+              <ul>
+                <li class="navMenu__listItem"><a href="#work">サイト制作実績</a></li>
+                <li class="navMenu__listItem"><a href="#illust">イラスト制作実績</a></li>
+                <li class="navMenu__listItem"><a href="#other">JavaScriptについて</a></li>
+              </ul>
+            </nav>
+          </div>
+        <main class="contentFixed">
+            <section class="work">
+                <div class="sectionHeading">
+                    <h2 class="sectionTitle" id="work">サイト制作実績</h2>
+                    <p>〜直近に制作したページのご紹介〜</p>
+                </div>
+                <div class="workSummary container">
+                    <div class="workSummary__box">
+                        <h3 class="contentTitle">老舗英会話教室Webサイト</h3>
+                        <a href="https://www.mls-etd.co.jp/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/work01.jpeg" alt="">
+                        </a>
+                        <p>
+                            全200ページ近いサービスサイトのリニューアル。
+                        </p>
+                        <h4>プロジェクト規模７名</h4>
+                        <ul>
+                            <li>プロデューサー１名</li>
+                            <li>ディレクター１名</li>
+                            <li>コーダー２名</li>
+                            <li>外部パートナー企業3名（デザイナー、コーダー、内訳不明）</li>
+                        </ul>
+                    </div>
+                    <div class="workSummary__box">
+                        <h3 class="contentTitle">自社運営Webサイト</h3>
+                        <a href="https://syouei-farm.net/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/work02.jpeg" alt="">
+                        </a>
+                        <p>
+                            段階的なリニューアルプロジェクトのフェーズ１が終了。
+                        </p>
+                        <h4>プロジェクト規模４名</h4>
+                        <ul>
+                            <li>プロデューサー１名</li>
+                            <li>ディレクター１名</li>
+                            <li>デザイナー１名</li>
+                            <li>コーダー１名</li>
+                        </ul>
+                    </div>
+                    <div class="workSummary__box">
+                        <h3 class="contentTitle">自社運営ECサイト</h3>
+                        <a href="https://shizekura.net/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/work03.jpeg" alt="">
+                        </a>
+                        <p>
+                            ASP「ショップサーブ」のシンプルな既製テーマをカスタマイズして制作。
+                        </p>
+                        <h4>プロジェクト規模４名</h4>
+                        <ul>
+                            <li>プロデューサー１名</li>
+                            <li>ディレクター１名</li>
+                            <li>デザイナー１名</li>
+                            <li>コーダー１名</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="open" class="btn">
+                    その他制作サイト一覧
+                </div>
+                <div id="modal" class="hidden">
+                    <div class="modalBox">
+                        <h3 class="contentTitle">
+                            <a href="https://www.saiga.jp/" target="_blank" rel="noopener noreferrer">
+                            鍼灸整骨院Webサイト
+                            </a>
+                        </h3>
+                        <p>
+                            プロジェクトの人数は3名（ディレクター兼コーダー１名、ライター１名、デザイナー１名）。
+                        </p>
+                        <a class="accessBtn" href="https://www.saiga.jp/" target="_blank" rel="noopener noreferrer">
+                            サイトを見る ＞
+                        </a>
+                    </div>
+                    <div class="modalBox">
+                        <h3 class="contentTitle">
+                            <a href="https://www.sanshinj.co.jp/" target="_blank" rel="noopener noreferrer">
+                            「プラント工事」と「製缶品製作」の老舗企業Webサイト
+                            </a>
+                        </h3>
+                        <p>
+                            プロジェクトの人数は５名（プロデューサー１名、ディレクター１名、デザイナー１名、コーダー２名）。
+                        </p>
+                        <a class="accessBtn" href="https://www.sanshinj.co.jp/" target="_blank" rel="noopener noreferrer">
+                            サイトを見る ＞
+                        </a>
+                    </div>
+                    <div class="modalBox">
+                        <h3 class="contentTitle">
+                            <a href="https://www.scivax.com/" target="_blank" rel="noopener noreferrer">
+                            微細加工サービス企業Webサイト
+                            </a>
+                        </h3>
+                        <p>
+                            プロジェクトの人数は５名（プロデューサー１名、ディレクター兼ライター１名、デザイナー１名、コーダー２名）。
+                        </p>
+                        <a class="accessBtn" href="https://www.scivax.com/" target="_blank" rel="noopener noreferrer">
+                            サイトを見る ＞
+                        </a>
+                    </div>
+                    <div class="modalBox">
+                        <h3 class="contentTitle">
+                            <a href="https://beset-plaza.net/" target="_blank" rel="noopener noreferrer">
+                            自社運営の自然食品販売店Webサイト
+                            </a>
+                        </h3>
+                        <p>
+                            プロジェクトの人数は４名（プロデューサー１名、ディレクター兼ライター１名、デザイナー１名、コーダー１名）。
+                        </p>
+                        <a class="accessBtn" href="https://beset-plaza.net/" target="_blank" rel="noopener noreferrer">
+                            サイトを見る ＞
+                        </a>
+                    </div>
+                    <div class="btn" id="close">
+                        閉じる
+                    </div>
+                </div>
+                <div id="mask" class="hidden"></div>
+            </section>
+            <section class="illust">
+                <div class="sectionHeading">
+                    <h2 class="sectionTitle" id="illust">イラスト制作実績</h2>
+                    <p>〜Webサイト用のイラスト〜</p>
+                </div>
+                <h3 class="contentTitle sp">LPのイラストを一部担当</h3>
+                <div class="illustSummary container">
+                    <div class="illustSummary__txtBox">
+                        <h3 class="contentTitle pc">LPのイラストを一部担当</h3>
+                        <p class="illustSummary__txt">
+                            応募した職種はエンジニアですが、AdobeのIllustratorやPhotoshopを使用してのイラスト制作も可能です。ランディングページのイラストの一部を制作しました。
+                        </p>
+                        <p class="illustSummary__txt">
+                            ※サイト自体は外部業者の制作です。
+                        </p>
+                        <img src="img/sample04.jpeg" alt="">
+                        <div class="btn">
+                            <a href="illust.html" rel="noopener noreferrer" target="_blank">制作したイラスト一覧はこちら</a>
+                        </div>
+                    </div>
+                    <a href="https://baribari.313599.net/" rel="noopener noreferrer" target="_blank">
+                        <img src="img/illust_summary.jpeg" alt="発電バリバリくんのサイトイメージ">
+                    </a>
+                </div>
+            </section>
+            <section class="other">
+                <div class="sectionHeading">
+                    <h2 class="sectionTitle" id="other">JavaScriptについて</h2>
+                    <p>〜独学の一環でアプリケーションを制作〜</p>   
+                </div>
+                <div class="other__txtBox">
+                    <p class="other__txt">実務ではJavaScript実装の経験が多くありませんが、独学で学習しております。</p>
+                    <p class="other__txt">技術レベルにつきましては、こちらのポートフォリオと、学習の過程で制作した下記のアプリケーションをご確認頂ければ幸いです。</p>
+                </div>
+                <div class="other__appList">
+                    <div class="container">
+                        <div class="other__appListItem">
+                            <a href="Applications/MyCalendar/index.html" rel="noopener noreferrer" target="_blank">カレンダー</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Applications/MyOmikuji/index.html" rel="noopener noreferrer" target="_blank">おみくじ</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Applications/MyQuiz/index.html" rel="noopener noreferrer" target="_blank">3択クイズ</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Applications/MySlotMachine/index.html" rel="noopener noreferrer" target="_blank">スロットマシン</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Applications/MyStopwatch/indx.html" rel="noopener noreferrer" target="_blank">ストップウォッチ</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Applications/MyTypingGame/index.html" rel="noopener noreferrer" target="_blank">タイピングゲーム</a>
+                        </div>
+                        <div class="other__appListItem">
+                            <a href="Applications/vue.js/MyToDo/index.html" rel="noopener noreferrer" target="_blank">ToDoアプリ(vue.js)</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Copyright © 2021 Nagano Masato All rights not reserved.</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
