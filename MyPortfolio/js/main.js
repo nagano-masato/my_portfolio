@@ -5,29 +5,28 @@
 
     // モーダル
 
-    const open = document.getElementById('open');
-    const modal = document.getElementById('modal');
-    const close = document.getElementById('close');
-    const mask = document.getElementById('mask');
+    // const open = document.getElementById('open');
+    // const close = document.getElementById('close');
+    // // const mask = document.getElementById('mask');
     
-    function scrollToTop(){
-        scrollTo(0, 0);
-    }
+    // function scrollToTop(){
+    //     scrollTo(0, 0);
+    // }
 
-    open.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-        mask.classList.remove('hidden');
-        scrollToTop();
-    });
+    // open.addEventListener('click', () => {
+    //     // modal.classList.remove('hidden');
+    //     mask.classList.remove('hidden');
+    //     scrollToTop();
+    // });
 
-    close.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        mask.classList.add('hidden');
-        open.scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-        })
-    });
+    // close.addEventListener('click', () => {
+    //     // modal.classList.add('hidden');
+    //     // mask.classList.add('hidden');
+    //     open.scrollIntoView({
+    //         behavior: "smooth",
+    //         block: "center"
+    //     })
+    // });
 
     mask.addEventListener('click', () => {
         close.click();
