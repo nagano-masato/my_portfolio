@@ -112,6 +112,10 @@ section{
     justify-content: space-between;
 }
 
+.workSummary {
+    margin-bottom: 60px;
+}
+
 .workSummary a, .illustSummary a{
     flex-basis: 45%;
 }
@@ -134,8 +138,11 @@ section{
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
-    padding: 1rem 0;
     margin-bottom: 1rem;
+}
+
+.other__appListItem a {
+    padding: 1em;
 }
 
 .contentTitle{
@@ -355,6 +362,10 @@ section{
 
     main{
         padding: 0 1rem;
+    }
+
+    .workSummary:not(:last-child) {
+        margin-bottom: 0;
     }
 
     .workSummary a,
